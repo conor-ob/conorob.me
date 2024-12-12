@@ -1,9 +1,18 @@
-import tailwind from "@astrojs/tailwind";
-import icon from "astro-icon";
+// @ts-check
 import { defineConfig } from "astro/config";
+
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-moon-landing.netlify.app/",
-  integrations: [tailwind(), icon()],
+  site: import.meta.env.VITE_SITE,
+  output: "static",
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
+  devToolbar: {
+    enabled: false,
+  },
 });

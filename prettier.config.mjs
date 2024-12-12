@@ -1,9 +1,6 @@
 /** @type {import("prettier").Config} */
-const config = {
-  plugins: [
-    "prettier-plugin-astro",
-    "prettier-plugin-tailwindcss", // MUST come last
-  ],
+export default {
+  plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   overrides: [
     {
       files: "*.astro",
@@ -13,5 +10,3 @@ const config = {
     },
   ],
 };
-
-export default config;
