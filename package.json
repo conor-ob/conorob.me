@@ -29,7 +29,6 @@
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.9",
-    "tailwindcss-fluid-type": "^2.0.6",
     "typescript": "^5.7.2"
   }
 }
