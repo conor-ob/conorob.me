@@ -28,5 +28,5 @@ export default {
   corePlugins: {
     fontSize: false,
   },
-  plugins: [require("tailwindcss-fluid-type")],
+  plugins: [],
 };
